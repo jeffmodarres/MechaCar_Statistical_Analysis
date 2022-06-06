@@ -39,9 +39,12 @@ As it can be seenbelow, using total popoulation has a p-value of 0.06 which mean
 ![t-test result](t_test_dev3.png)  
 **Fig4. Lot Summary**
 
-t-test data for different lots are summarized below. Lot1 is on the top and Lot3 is at the bottom. Lot 1 to 3 have p-values of 1,0.6 and 0.04 respectively. This shows that Lot3 mean is statitically different from popoluation mean of 1500 and we can reject the null hypothesis.
+t-test data for different lots are summarized below. Lot1 is on the top and Lot3 is at the bottom. Lot 1 to 3 have p-values of 1,0.6 and 0.04 respectively. This shows that Lot3 mean is statitically different from popoluation mean of 1500 and we can reject the null hypothesis.  
+
 ![t-test Lot1](lot1_ttest.png)  
+
 ![t-test Lot2](lot2_ttest.png)  
+
 ![t-test Lot3](lot3_ttest.png)  
 **Fig5. Lot data**
 
@@ -53,7 +56,8 @@ Null hypothesis would be MechaCar is same as competition and the alternative hyp
 
 To test the hypothesis, we can start by doing ANOVA analysis. If this analysis shows any sign, then we can furthur follow up with more one-sample t-Test.
 
-Lets say our data table is like below:
+Lets say our data table is like below:  
+
 ![data](sample_data.png)  
 **Fig6. Sample data**
 If we focus on one metric for instant cost, then the null hypothesis would be that the price of MechaCar is close to all other competiion cars(comparing to mean). The alternative hypothesis would be that MechaCar cost is different. 
