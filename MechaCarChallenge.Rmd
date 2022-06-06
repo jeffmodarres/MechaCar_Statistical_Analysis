@@ -1,0 +1,71 @@
+---
+title: "R Notebook - Module 15 Challenge"
+output:
+  html_document:
+    df_print: paged
+---
+## part 1
+
+### adding packages
+```{r}
+library (dplyr)
+
+```
+
+
+### reading csv file
+```{r}
+filename <- "MechaCar_mpg.csv"
+cartable <- read.csv(filename)
+cartable
+```
+
+### Performing lm
+```{r}
+
+lmfit <-  lm(mpg ~  vehicle_length + vehicle_weight+spoiler_angle+ground_clearance+AWD,cartable)
+summary(lmfit)
+
+```
+
+
+## Importing Suspension_coil dataset
+```{r}
+file2 <-  "Suspension_Coil.csv"
+sus_coil <- read.csv(file2)
+sus_coil
+```
+## Creating a summary
+```{r}
+
+total_summary <-  sus_coil %>% summarise(Mean = mean(PSI), Median = median(PSI),Variance = var(PSI),SD = sd(PSI))
+total_summary
+```
+
+
+## lot_summary
+```{r}
+lot_summary <-  sus_coil %>% group_by(Manufacturing_Lot) %>%  summarise(Mean = mean(PSI), Median = median(PSI),Variance = var(PSI),SD = sd(PSI))
+lot_summary
+```
+
+## t-Test all lots
+
+```{r}
+t.test(sus_coil$PSI,mu = 1500)
+
+```
+## Lot1 t.test
+```{r}
+sus_coil %>%  subset(Manufacturing_Lot =="Lot1") %>% select(PSI) %>% t.test(mu=1500) 
+```
+## Lot 2 t.test
+```{r}
+sus_coil %>%  subset(Manufacturing_Lot =="Lot2") %>% select(PSI) %>% t.test(mu=1500) 
+
+```
+## Lot 3 t.test
+```{r}
+sus_coil %>%  subset(Manufacturing_Lot =="Lot3") %>% select(PSI) %>% t.test(mu=1500) 
+```
+
