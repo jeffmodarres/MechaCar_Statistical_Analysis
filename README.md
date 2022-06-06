@@ -41,11 +41,11 @@ As it can be seenbelow, using total popoulation has a p-value of 0.06 which mean
 
 t-test data for different lots are summarized below. Lot1 is on the top and Lot3 is at the bottom. Lot 1 to 3 have p-values of 1,0.6 and 0.04 respectively. This shows that Lot3 mean is statitically different from popoluation mean of 1500 and we can reject the null hypothesis.  
 
-![t-test Lot1](lot1_ttest.png)  
+![t-test Lot1](Lot1_ttest.png)  
 
-![t-test Lot2](lot2_ttest.png)  
+![t-test Lot2](Lot2_ttest.png)  
 
-![t-test Lot3](lot3_ttest.png)  
+![t-test Lot3](Lot3_ttest.png)  
 **Fig5. Lot data**
 
 ## Study Design: MechaCar vs Competition
